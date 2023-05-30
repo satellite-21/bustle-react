@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  overflow: scroll;
+}
+
+.mainContainer {
+  background-color: #D5DFE6;
+  position: relative;
+  min-height: 100vh; /* Set a minimum height to fill the viewport */
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent; /* Set the color of the scrollbar to transparent */
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 0;
+  padding-left: 300px;
+  color: white;
+}
+
+.logoImage {
+  width: 100px; /* Adjust the size of the logo image accordingly */
+}
+
+.logoImage svg {
+  fill: #ffffff; /* Set the fill color to white */
+}
+
+.menuLink {
+  color: #ffffff;
+  padding: 0px 300px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: larger;
+}
+
+.background_image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0; /* Set a lower z-index to make it overlap with the header */
+}
+
+.backgound_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.image_text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:left;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Custom scrollbar styles */
+.mainContainer::-webkit-scrollbar {
+  width: 5px; /* Set the width of the scrollbar */
+}
+
+.mainContainer::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the background color of the scrollbar track to transparent */
+}
+
+.mainContainer::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the color of the scrollbar thumb to transparent */
+}
+
+.progressBar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #007bff;
+    width: 1;
+    transition: width 1s linear;
+    border-radius: 8px;
+  }
+  
+  .progressBar.complete .progress {
+    width: 100%;
+  }
+  
+
+
+/* new style */
+
+
+.mainContainer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #D5DFE6;
+}
+
+.header2 {
+    background-color: #D5DFE6;
+    padding: 20px;
+    width: 100%;
+    /* position: fixed; */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    margin: 0;
+    width: 100%;
+  }
+
+  .navBar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .logoImage2 {
+    height: 50px;
+  }
+  
+  .img1 {
+    flex-grow: 1;
+    object-fit:fill;
+    height: 100%;
+    width: 33%;
+}
+  .img1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .image_text2 {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    /* top:10%;
+    right: 10%; */
+    line-height: 22px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 14px;
+    font-family:sans-serif;
+}
