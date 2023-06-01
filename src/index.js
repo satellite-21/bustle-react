@@ -142,8 +142,8 @@ const Bustle = () => {
       clearInterval(interval);
     };
   }, []);
-
-  useEffect(() => {
+dd
+  useEffect(() => {     
     if (progress >= 100) {
       clearInterval(interval);
       setProgress(0);
